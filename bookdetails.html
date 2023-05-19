@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c93600394d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/bookings.css"/>
+    <title>Bookdetails</title>
+  </head>
+  <body>
+    <div class="container-book">
+        <div class="container-grid">
+          <div class="container-one">
+            <section class="userdetails" id="userdetails-el">
+              <i class="fa-solid fa-user fa-4x"></i>
+              <div class="userstyle" id="user"></div>
+            </section>
+            <nav class="navbooking">
+              <ul class="navlist">
+                <li>
+                  <a href="home.html"><i class="fa-solid fa-home"></i><span>Home</span></a>
+                </li>
+                <li>
+                  <a href="addbooking.html"
+                    ><i class="fa-solid fa-plus"></i><span>New Booking</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa-solid fa-eye"></i><span>Bookings</span></a
+                  >
+                </li>
+                <li>
+                 </i
+                  ><a href="" id="logout"> <i class="fa-solid fa-sign-out-alt"></i><span>Logout</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="container-two">
+              <header class="homestyle"><span class="homespan">Bookings</span><span class="iconspan"><i class="fa-solid fa-check"></i></span></header>
+           <div class="table" id="table-el">
+
+             <div class="bookings" id="tbl-el">
+                <div class="heading">
+                    <span class="headings">Vehicles</span>
+                    <span class="headings">Route</span>
+                </div>
+               <div class="bookingsdetails">
+                <span class="detailsone" id="vehicle-id"></span>
+                <span class="detailstwo" id="route-id"></span>
+               </div>
+               <div class="buttonss">
+                <button type="button" id="edit-el">
+                    Edit
+                </button>
+                <button type="button" id="delete-el">Delete</button>
+               </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <script src="nav/bookdetails.js"></script>
+  </body>
+</html>

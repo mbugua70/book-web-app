@@ -1,0 +1,199 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary: #00539cff;
+  --seondary: #fff;
+  --tirtiary: gray;
+  ---input: #f3eeee;
+  --buttonhover: #eea47fff;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--seondary);
+}
+
+.container-home {
+  width: 100%;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.container-one {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  border-right: 1px solid var(--tirtiary);
+  margin-right: 0;
+}
+
+.userdetails {
+  text-align: center;
+}
+
+.navbooking {
+  display: inline-block;
+  margin-block: 2rem;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+.navbooking ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbooking ul li {
+  margin-inline: 0;
+  padding-inline: 0;
+  width: 100%;
+  display: block;
+}
+
+.navbooking ul li a {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-inline: 0;
+  align-items: center;
+  padding: 12px 25px;
+  font-size: 20px;
+  background-color: var(--primary);
+  margin-block: 2px;
+  color: var(--seondary);
+  transition: all ease-out 600ms;
+}
+
+.navbooking ul li a i {
+  width: 20%;
+  text-align: start;
+}
+
+.navbooking ul li a:hover {
+  background-color: var(--buttonhover);
+}
+
+.container-two {
+  margin-left: 0;
+}
+
+.homestyle {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: var(--seondary);
+}
+
+.homespan {
+  font-weight: 600;
+}
+
+.iconspan {
+  margin-block: 0;
+  padding-block: 0;
+  min-height: 100%;
+  background-color: var(--buttonhover);
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 0;
+  font-weight: 600;
+}
+
+.testaccount {
+  width: 22rem;
+  height: 12rem;
+  padding: 1rem;
+  margin: 1.5rem;
+  background-color: var(--primary);
+  border-radius: 6px;
+  color: var(--seondary);
+  border-style: none;
+  box-shadow: 0 0 24px -15px rgba(0, 0, 0, 1);
+}
+
+.testaccount button {
+  padding: 8px 16px;
+  border-style: none;
+  border-radius: 25px;
+  background-color: var(--seondary);
+  font-size: 18px;
+  transition: all ease-out 600ms;
+}
+
+.testaccount button:hover {
+  background-color: var(--buttonhover);
+  color: var(--seondary);
+}
+
+.details-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  gap: 10px;
+}
+
+.box {
+  width: 18rem;
+  height: 10rem;
+  background-color: var(--primary);
+  border-radius: 6px;
+  box-shadow: 0 0 24px -15px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  row-gap: 20px;
+  font-size: 18px;
+  color: var(--seondary);
+}
+
+.user {
+  width: 80%;
+}
+
+.user-para {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.user-name {
+  text-align: start;
+  padding: 8px;
+}
+.user-email {
+  text-align: start;
+  padding: 8px;
+}
+
+.padding {
+  padding-right: 4px;
+}

@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c93600394d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/signup.css" />
+    <title>signup</title>
+  </head>
+  <body>
+    <div class="container-signup">
+      <div class="form">
+        <div class="decor-box"></div>
+        <h1>Sign Up</h1>
+        <form class="form-el" id="signup">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="user--style"
+            id="user-el1"
+            name="username"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="email--style"
+            id="user-email1"
+            name="email"
+            required
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="pass--style"
+            id="pass-el1"
+            name="password"
+          />
+          <label for="password">Confirm Password</label>
+          <input
+            type="password"
+            class="copass-style"
+            id="conpass-el"
+            name="password"
+          />
+          <p class="error" id="error-el">Please match the password!</p>
+          <input type="submit" value="Sign Up" class="button" />
+        </form>
+        <div class="signin">
+          <p>Already have an account? <a href="sign.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="nav/nav.js"></script>
+  </body>
+</html>

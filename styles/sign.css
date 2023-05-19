@@ -1,0 +1,152 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+:root {
+  --primary: #00539cff;
+  --seondary: #fff;
+  --tirtiary: gray;
+  ---input: #f3eeee;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--seondary);
+}
+
+.formsign {
+  width: 38%;
+  margin: 2rem auto;
+  padding: 3rem;
+  box-shadow: 0 0 24px -10px rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  position: relative;
+}
+
+.formsign form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-block: 2.5rem;
+}
+
+.formsign form label {
+  color: gray;
+}
+
+.formsign input {
+  border-style: none;
+  border-bottom: 1px solid var(--primary);
+  padding: 8px 8px;
+  margin-bottom: 5px;
+  transition: all ease-out 600ms;
+  cursor: pointer;
+}
+
+.formsign input:hover {
+  background-color: var(---input);
+}
+.formsign p .firstchild {
+  float: right;
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formsign button {
+  padding: 7px 0;
+  background-color: var(--primary);
+  border-style: none;
+  border-radius: 25px;
+  color: var(--seondary);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  transition: all ease-out 600ms;
+  cursor: pointer;
+}
+
+.formsign button span {
+  width: 93%;
+}
+
+.formsign button i {
+  padding: 5px;
+  background-color: var(--seondary);
+  color: var(--primary);
+  border-style: none;
+  border-radius: 50%;
+  transition: all ease-out 600ms;
+}
+
+.formsign button:hover {
+  background-color: var(--seondary);
+  color: var(--primary);
+  box-shadow: 0 0 24px -10px rgba(0, 0, 0, 1);
+}
+
+.formsign button:hover > i {
+  background-color: var(--primary);
+  color: var(--seondary);
+}
+
+.secondchild {
+  width: min-content;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.secondchild a {
+  padding-inline: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fontusers,
+.fontpassword {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.fontusers i,
+.fontpassword i {
+  position: absolute;
+  bottom: 14px;
+  left: 5px;
+  color: gray;
+  transition: all ease-out 600ms;
+  color: rgb(207, 207, 207);
+}
+
+.fontusers input:hover ~ i,
+.fontpassword input:hover ~ i {
+  display: none;
+}
+
+::placeholder {
+  padding-inline: 26px;
+  font-size: 16px;
+  color: rgb(207, 207, 207);
+}
+
+.boxdecor {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  position: absolute;
+  right: -16;
+  top: -12;
+  border-radius: 50%;
+}

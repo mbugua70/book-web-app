@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/c93600394d.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="styles/newbook.css"/>
+    <title>New booking</title>
+  </head>
+  <body>
+    <div class="container-booking">
+        <div class="container-grid">
+            <div class="container-one">
+              <section class="userdetails" id="userdetails-el">
+                <i class="fa-solid fa-user fa-4x"></i>
+              </section>
+              <nav class="navbooking">
+                <ul class="navlist">
+                  <li>
+                    <a href="home.html"><i class="fa-solid fa-home"></i><span>Home</span></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-plus"></i><span>New Booking</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="bookdetails.html"
+                      ><i class="fa-solid fa-eye"></i><span>Bookings</span></a
+                    >
+                  </li>
+                  <li>
+                   </i
+                    ><a href="" id="logout"> <i class="fa-solid fa-sign-out-alt"></i><span>Logout</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+        <div class="container-two">
+            <div class="formstylesselect" id="form-els">
+                <form class="formsselect">
+                   <label for="number-plate">Select the vehicle number plate</label>
+                  <div class="selectone">
+                    <select id="vehicles" name="number-plate">
+                        <option style="margin-top:10px; padding-top: 2em;"  value="KDA678">KDA 678</option>
+                        <option  value="KBC988">KBC 988</option>
+                        <option  value="KBD244">KBD 244</option>
+                        <option  value="KCA489">KCA 489</option>
+                        <option  value="KBA300">KBA 300</option>
+                        <option  value="KDD789">KDD 789</option>
+                       </select>
+                  </div>
+                <label for="route">Select the route</label>
+              <div class="selecttwo">
+                <select name="route" id="route-el" class="route-style">
+                    <option value="mombasa">Mombasa</option>
+                    <option value="Naivasha">Naivasha</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Nakuru">Nakuru</option>
+                    <option value="Nyeri">Nyeri</option>
+                    <option value="Embu">Embu</option>
+                </select>
+              </div>
+                <div class="buttons">
+                    <button type="button" id="button-el">
+                        save
+                    </button>
+
+                </div>
+                </form>
+            </div>
+        </div>
+          </div>
+    </div>
+    <script src="nav/addbooking.js"></script>
+  </body>
+</html>

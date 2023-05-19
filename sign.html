@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c93600394d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/sign.css" />
+    <title>signin</title>
+  </head>
+  <body>
+    <div class="containersignin-style">
+      <div class="formsign">
+        <div class="boxdecor"></div>
+        <h1>Sign In</h1>
+        <form id="form-el">
+          <div class="fontusers">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              class="style-user"
+              id="user-el2"
+              placeholder="Type your username"
+              required
+            />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <p id="user-err" class="user-errst"></p>
+          <div class="fontpassword">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="pass-style"
+              id="pass-el2"
+              name="password"
+              placeholder="Type your password"
+              required
+            />
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <p id="pass-err" class="pass-errst"></p>
+
+          <p><a href="" class="firstchild">Forgot password?</a></p>
+          <button type="submit">
+            <span>Sign In</span><i class="fa-solid fa-greater-than"></i>
+          </button>
+        </form>
+        <p class="signup-styles secondchild">
+          Or<a href="signup.html">Sign Up</a>
+        </p>
+      </div>
+    </div>
+    <script src="nav/sign.js"></script>
+  </body>
+</html>

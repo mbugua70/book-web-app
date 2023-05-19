@@ -1,0 +1,311 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary: #00539cff;
+  --seondary: #fff;
+  --tirtiary: gray;
+  ---input: #f3eeee;
+  --buttonhover: #eea47fff;
+}
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--seondary);
+}
+
+.container-home {
+  width: 100%;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.container-one {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+  border-right: 1px solid var(--tirtiary);
+  margin-right: 0;
+}
+
+.userdetails {
+  text-align: center;
+}
+
+.navbooking {
+  display: inline-block;
+  margin-block: 2rem;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+.navbooking ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbooking ul li {
+  margin-inline: 0;
+  padding-inline: 0;
+  width: 100%;
+  display: block;
+}
+
+.navbooking ul li a {
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-inline: 0;
+  align-items: center;
+  padding: 12px 25px;
+  font-size: 20px;
+  background-color: var(--primary);
+  margin-block: 2px;
+  color: var(--seondary);
+  transition: all ease-out 600ms;
+}
+
+.navbooking ul li a i {
+  width: 20%;
+  text-align: start;
+}
+
+.navbooking ul li a:hover {
+  background-color: var(--buttonhover);
+}
+
+.container-two {
+  margin-left: 0;
+}
+
+.homestyle {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: var(--seondary);
+}
+
+.homespan {
+  font-weight: 600;
+}
+
+.iconspan {
+  margin-block: 0;
+  padding-block: 0;
+  min-height: 100%;
+  background-color: var(--buttonhover);
+  padding: 1rem;
+  margin-left: 1rem;
+  margin-right: 0;
+  font-weight: 600;
+}
+
+.table {
+  margin: 2rem auto;
+  width: 80%;
+}
+
+.bookings {
+  white-space: nowrap;
+  width: 38%;
+  display: flex;
+  border: 1px solid var(--primary);
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.heading {
+  background-color: var(--primary);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-block: 0.85rem;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--seondary);
+}
+
+.bookingsdetails {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  padding-block: 0.85rem;
+  background-color: var(---input);
+}
+
+.buttonss {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.buttonss button {
+  padding: 8px 20px;
+  border-style: none;
+  border-radius: 25px;
+  background-color: var(--primary);
+  color: var(--seondary);
+  transition: all ease-out 600ms;
+}
+
+.buttonss button:hover {
+  background-color: var(--seondary);
+  color: var(--primary);
+  box-shadow: 0 0 25px -12px rgba(0, 0, 0, 1);
+}
+
+.user {
+  width: 80%;
+}
+
+.user-para {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary);
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.user-name {
+  text-align: start;
+  padding: 8px;
+}
+.user-email {
+  text-align: start;
+  padding: 8px;
+}
+
+.padding {
+  padding-right: 4px;
+}
+
+.formstylesselect {
+  width: 48%;
+  margin: 1rem auto;
+  box-shadow: 0 0 25px -15px rgba(0, 0, 0, 1);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.formsselect {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formsselect label {
+  font-weight: 600;
+  color: var(--tirtiary);
+}
+
+select {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  appearance: none;
+  outline: 0;
+  background-image: none;
+  margin: 0;
+  padding: 0 0 0 0.5em;
+  cursor: pointer;
+  border: 1px solid gray;
+  font-size: 16px;
+}
+
+.selectone,
+.selecttwo {
+  position: relative;
+  display: block;
+  width: 24rem;
+  height: 3em;
+  line-height: 3;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.selectone::after,
+.selecttwo::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 0.5em;
+  background-color: var(--buttonhover);
+  pointer-events: none;
+}
+
+.buttons {
+  text-align: center;
+  width: 24rem;
+}
+
+.buttons .buttonedt {
+  padding: 10px 26px;
+  border-style: none;
+  background-color: var(--primary);
+  color: var(--seondary);
+  border-radius: 6px;
+  margin: 1rem auto;
+  transition: all ease-out 600ms;
+}
+
+.buttons .buttonedt:hover {
+  background-color: var(--seondary);
+  color: var(--primary);
+  box-shadow: 0 0 25px -8px rgba(0, 0, 0, 1);
+}
+
+.formsselect {
+  padding: 2rem;
+  width: 56%;
+  box-shadow: 0 0 26px -12px rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  position: relative;
+}
+
+.formsselect i {
+  color: var(--primary);
+  position: absolute;
+  top: 8;
+  right: 15;
+  font-size: 22px;
+  transition: all ease-out 600ms;
+}
+
+.formsselect i:hover {
+  color: var(--buttonhover);
+}
